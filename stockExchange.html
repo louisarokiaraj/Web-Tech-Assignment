@@ -382,9 +382,9 @@
                 ChangePercent = ref_output['ChangePercent'];
                 ChangePercent = ((Math.round(ChangePercent * 1000) / 1000).toFixed(2));
                 if ((ref_output['ChangePercent'] > 0) && (ref_output['Change'] > 0)) {
-                    var Change_ChangePer_out = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='up.png'>";
+                    var Change_ChangePer_out = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/up.png'>";
                 } else {
-                    var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='down.png'>";
+                    var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/down.png'>";
                 }
                 MarketCap = ref_output['MarketCap'];
                 MarketCap = getMarketDataRef(MarketCap);
@@ -400,9 +400,9 @@
                     else
                     {
                         if ((ref_output['ChangePercent'] > 0) && (ref_output['Change'] > 0)) {
-                            var ref_output = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='up.png'>";
+                            var ref_output = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/up.png'>";
                         } else {
-                            var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='down.png'>";
+                            var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/down.png'>";
                         }
 
                         $('#stockTableImpl > tbody:last').append('<tr id=' + symbol + '><td><a id="symbolLinkN" href="javascript:void(0)">' + symbol + '</a></td><td>' + name + '</td><td id=' + symbol + 'lastPrice>' + LastPrince_out + '</td><td id=' + symbol + 'changeper' + '>' + Change_ChangePer_out + '</td><td id=' + symbol + 'marketCap' + '>' + MarketCap + '</td><td><p data-placement="top" data-toggle="tooltip" title="Delete"><button id="delButton" class="btn btn-default btn-sm remove" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td></tr>');
@@ -553,9 +553,9 @@
                         ChangePercent = refData_output['ChangePercent'];
                         ChangePercent = ((Math.round(ChangePercent * 1000) / 1000).toFixed(2));
                         if ((refData_output['ChangePercent'] > 0) && (refData_output['Change'] > 0)) {
-                            var Change_ChangePer_out = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='up.png'>";
+                            var Change_ChangePer_out = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/up.png'>";
                         } else {
-                            var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='down.png'>";
+                            var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/down.png'>";
                         }
                         MarketCap = refData_output['MarketCap'];
                         MarketCap = getMarketDataRef(MarketCap);
@@ -571,9 +571,9 @@
                         else
                         {
                             if ((refData_output['ChangePercent'] > 0) && (refData_output['Change'] > 0)) {
-                                var refData_output = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='up.png'>";
+                                var refData_output = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/up.png'>";
                             } else {
-                                var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='down.png'>";
+                                var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/down.png'>";
                             }
 
                             $('#stockTableImpl > tbody:last').append('<tr id=' + symbol + '><td><a id="symbolLinkN" href="javascript:void(0)">' + symbol + '</a></td><td>' + name + '</td><td id=' + symbol + 'lastPrice>' + LastPrince_out + '</td><td id=' + symbol + 'changeper' + '>' + Change_ChangePer_out + '</td><td id=' + symbol + 'marketCap' + '>' + MarketCap + '</td><td><p data-placement="top" data-toggle="tooltip" title="Delete"><button id="delButton" class="btn btn-default btn-sm remove" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td></tr>');
@@ -697,9 +697,9 @@
                 localStorage.setItem("symbolLocal",globalLocalStorage);
                 $("#favlogo").css("color", "yellow");
                 if((quote_output['ChangePercent'] > 0) && (quote_output['Change'] > 0)){
-                    var Change_ChangePer_out = '<span style="color:#40A040">'+Math.abs(Change)+" ( "+ChangePercent+" %) "+'</span>'+" <img src='up.png'>";
+                    var Change_ChangePer_out = '<span style="color:#40A040">'+Math.abs(Change)+" ( "+ChangePercent+" %) "+'</span>'+" <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/up.png'>";
                 }else{
-                    var Change_ChangePer_out = '<span style="color:#D52121">'+Math.abs(Change)+" ( "+ChangePercent+" %) "+'</span>'+" <img src='down.png'>";
+                    var Change_ChangePer_out = '<span style="color:#D52121">'+Math.abs(Change)+" ( "+ChangePercent+" %) "+'</span>'+" <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/down.png'>";
                 }
 
                 $('#stockTableImpl > tbody:last').append('<tr id='+symbol+'><td><a id="symbolLinkN" href="javascript:void(0)">'+symbol+'</a></td><td>'+name+'</td><td id='+symbol+'lastPrice>'+LastPrince_out+'</td><td id='+symbol+'changeper'+'>'+Change_ChangePer_out+'</td><td id='+symbol+'marketCap'+'>'+MarketCap+'</td><td><p data-placement="top" data-toggle="tooltip" title="Delete"><button id="delButton" class="btn btn-default btn-sm remove" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td></tr>');
@@ -742,9 +742,9 @@
                         ChangePercent = quote_output['ChangePercent'];
                         ChangePercent = ((Math.round(ChangePercent * 1000) / 1000).toFixed(2));
                         if ((quote_output['ChangePercent'] > 0) && (quote_output['Change'] > 0)) {
-                            var Change_ChangePer_out = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='up.png'>";
+                            var Change_ChangePer_out = '<span style="color:#40A040">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/up.png'>";
                         } else {
-                            var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='down.png'>";
+                            var Change_ChangePer_out = '<span style="color:#D52121">' + Math.abs(Change) + " ( " + ChangePercent + " %) " + '</span>' + " <img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/down.png'>";
                         }
                         timeStamp = quote_output['Timestamp'];
                         var temp_time = Date.parse(timeStamp);
@@ -757,9 +757,9 @@
                         ChangePercentYTD = quote_output['ChangePercentYTD'];
                         ChangePercentYTD = ((Math.round(ChangePercentYTD * 1000) / 1000).toFixed(2));
                         if ((quote_output['ChangeYTD'] > 0) && (quote_output['ChangePercentYTD'] > 0)) {
-                            var Change_ChangePerYTD_out = '<span style="color:#40A040"> ' + Math.abs(ChangeYTD) + " ( " + ChangePercentYTD + " %) " + '</span>' + "<img src='up.png'>";
+                            var Change_ChangePerYTD_out = '<span style="color:#40A040"> ' + Math.abs(ChangeYTD) + " ( " + ChangePercentYTD + " %) " + '</span>' + "<img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/up.png'>";
                         } else {
-                            var Change_ChangePerYTD_out = '<span style="color:#D52121"> ' + Math.abs(ChangeYTD) + " ( " + ChangePercentYTD + " %) " + '</span>' + "<img src='down.png'>";
+                            var Change_ChangePerYTD_out = '<span style="color:#D52121"> ' + Math.abs(ChangeYTD) + " ( " + ChangePercentYTD + " %) " + '</span>' + "<img src='https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/down.png'>";
                         }
                         high = '$ ' + quote_output['High'];
                         low = '$ ' + quote_output['Low'];
@@ -1069,7 +1069,7 @@
 					<div class="row">
 						<div id="ErrorDiv" class="col-lg-8">
 						</div>
-						<div class="col-lg-4" align="right">Powered By:<a href="http://dev.markitondemand.com/MODApis/" target="_blank"><img id="imagelogo" src="mod-logo.png"></a></div>
+						<div class="col-lg-4" align="right">Powered By:<a href="http://dev.markitondemand.com/MODApis/" target="_blank"><img id="imagelogo" src="https://raw.githubusercontent.com/louisarokiaraj/Web-Tech-Assignment/development/mod-logo.png"></a></div>
 					</div>
 				</div>
 			</div>
